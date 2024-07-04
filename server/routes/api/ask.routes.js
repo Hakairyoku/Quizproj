@@ -5,7 +5,7 @@ router.get("/", async (req, res) => {
     const asks = await Ask.findAll();
     res.status(200).json({ message: "success", asks });
   } catch ({ message }) {
-    res.status(500).json({ erroe: message });
+    res.status(500).json({ error: message });
   }
 });
 
@@ -16,7 +16,7 @@ router.get("/:id", async (req, res) => {
     const ask = await Ask.findBiPk(+id);
     res.status(200).json({ message: "success", ask });
   } catch ({ message }) {
-    res.status(500).json({ erroe: message });
+    res.status(500).json({ error: message });
   }
 });
 module.exports = router;
