@@ -13,7 +13,7 @@ router.get("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     console.log("params", id);
-    const ask = await Ask.findBiPk(+id);
+    const ask = await Ask.findByPk(+id);
     res.status(200).json({ message: "success", ask });
   } catch ({ message }) {
     res.status(500).json({ error: message });
