@@ -10,24 +10,33 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       question: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       answer: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       img: {
         type: Sequelize.STRING
       },
       topicId: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Topics',
+          key: 'id'
+        }
       },
       createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+        allowNull: true,
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       },
       updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+        allowNull: true,
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       }
     });
   },

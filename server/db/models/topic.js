@@ -9,13 +9,18 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      // define association here
+    static associate({ Asks }) {
+      this.hasMany(Asks, { foreignKey: 'topicId' })
     }
   }
   Topic.init({
-    title: DataTypes.STRING,
-    img: DataTypes.STRING
+    title: {
+      allowNull: false,
+      type: DataTypes.STRING
+    },
+    img: {
+      type: DataTypes.STRING
+    }
   }, {
     sequelize,
     modelName: 'Topic',
