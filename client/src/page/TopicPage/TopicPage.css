@@ -1,0 +1,38 @@
+/* Подключаем шрифт Roboto из Google Fonts */@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.topicpage-container {
+  /* padding: 20px;  background-color: #f4f4f9; */
+  text-align: center;  font-family: 'Roboto', sans-serif;
+}
+.topicpage-container h1 {  font-size: 48px;
+  color: #333;  margin-bottom: 20px;
+}
+.topics-container {  display: flex;
+  justify-content: center;
+  gap: 20px;}
+.topic-item {
+  background-color: #fff;  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  padding: 20px;
+  text-align: center;
+  /* width: 600px; */
+  
+}
+.topic-image {
+  width: 100%;  height: 200px; /* Устанавливаем фиксированную высоту */
+  object-fit: cover; /* Сохраняем пропорции изображения */  border-radius: 8px;
+  margin-bottom: 20px;}
+.topic-button {
+  background-color: #4caf50;  color: white;
+  padding: 8px 12px; /* Уменьшаем padding кнопки */  border-radius: 5px;
+  border: none;  cursor: pointer;
+  font-size: 14px; /* Уменьшаем размер шрифта */  text-transform: uppercase;
+  transition: background-color 0.3s ease;  width: 80%; /* Уменьшаем ширину кнопки */
+  margin: 0 auto; /* Центрируем кнопку */  font-family: 'Roboto', sans-serif; /* Применяем шрифт к кнопкам */
+  display: flex;  justify-content: center;
+  align-items: center;}
+.topic-button:hover {
+  background-color: #45a049;}
+.topic-link {
+  text-decoration: none;  color: white;
+  display: flex;  justify-content: center;
+  align-items: center;  width: 100%;
+  height: 100%;}
