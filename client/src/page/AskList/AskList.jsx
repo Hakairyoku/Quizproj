@@ -26,7 +26,7 @@ export default function AskList() {
   }, [id]);
 
   function checkAnswer() {
-    if (answer.toLowerCase() === (question.answer || '').toLowerCase()) {
+    if ((answer.toLowerCase()).trim() === (question.answer || '').toLowerCase()) {
       setRightAnswer('Success!');
       setTimeout(() => {
         SetAnswer('');
@@ -60,9 +60,13 @@ export default function AskList() {
             </button>
           ) : (
             <button>
-              <Link to={`/asks/${+id + 1}`}>Next</Link>
+              <Link to={`/asks/${+id + 1}`}>Далее</Link>
             </button>
           )}
+
+          <button>
+          <Link to={`/`}>На Главную</Link>
+          </button>
      
            
 
