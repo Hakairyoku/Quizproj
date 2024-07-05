@@ -7,125 +7,102 @@ module.exports = {
       "Asks",
       [
         {
-          question: '🎩🔍🕰️👶🧔🕺',
-          answer: 'answer1',
+          question: '👳🛶🐯',
+          answer: 'Жизнь Пи',
           img: 'answerImage1',
           topicId: 1
         },
         {
-          question: 'question4',
-          answer: 'answer4',
+          question: '🌍🙉🙈🙊',
+          answer: 'Планета обезьян',
           img: 'answerImage4',
           topicId: 1
         },
         {
-          question: 'question2',
-          answer: 'answer2',
+          question: '👨👨‍🦰💖🗻',
+          answer: 'Горбатая гора',
           img: 'answerImage2',
           topicId: 1
         },
         {
-          question: 'question3',
-          answer: 'answer3',
+          question: '🍽️🙏❤️',
+          answer: 'Ешь молись люби',
           img: 'answerImage3',
           topicId: 1
         },
         {
-          question: 'question5',
-          answer: 'answer5',
+          question: '👨‍🦱🤲✂️',
+          answer: 'Эдвард руки-ножницы',
           img: 'answerImage5',
           topicId: 1
         },
         {
-          question: 'question6',
-          answer: 'answer6',
+          question: '🐼👊🏻',
+          answer: 'Кунг-фу панда',
           img: 'answerImage6',
           topicId: 1
         },
         {
-          question: 'question7',
-          answer: 'answer7',
+          question: '😎😎🚀🔫👽',
+          answer: 'Люди в черном',
           img: 'answerImage7',
           topicId: 1
         },
         {
-          question: 'question8',
-          answer: 'answer8',
+          question: '👩🍸🍹🥂🥃🕒',
+          answer: 'Пила',
           img: 'answerImage8',
           topicId: 1
         },
         {
-          question: 'question9',
-          answer: 'answer9',
-          img: 'answerImage9',
-          topicId: 1
-        },
-        {
-          question: 'question10',
-          answer: 'answer10',
-          img: 'answerImage10',
-          topicId: 1
-        },
-        {
-          question: 'question1',
-          answer: 'answer1',
+          question: '🗡️🪑🛡️',
+          answer: 'Игра престолов',
           img: 'answerImage1',
           topicId: 2
         },
         {
-          question: 'question4',
-          answer: 'answer4',
+          question: '🏥👨‍⚕️🐺',
+          answer: 'Доктор Хаус',
           img: 'answerImage4',
           topicId: 2
         },
         {
-          question: 'question2',
-          answer: 'answer2',
+          question: '👨‍🔬👨‍🎤🔫🧪⚗️💊💵',
+          answer: 'Во все тяжкие',
           img: 'answerImage2',
           topicId: 2
         },
         {
-          question: 'question3',
-          answer: 'answer3',
+          question: '👣♛',
+          answer: 'Ход королевы',
           img: 'answerImage3',
           topicId: 2
         },
         {
-          question: 'question5',
-          answer: 'answer5',
+          question: '🔪🧢',
+          answer: 'Острые козырьки',
           img: 'answerImage5',
           topicId: 2
         },
         {
-          question: 'question6',
-          answer: 'answer6',
+          question: '🕵️‍♂️🎻📚',
+          answer: 'Шерлок',
           img: 'answerImage6',
           topicId: 2
         },
         {
-          question: 'question7',
-          answer: 'answer7',
+          question: '👨👨👨🤝👩👩‍🦰👩',
+          answer: 'Друзья',
           img: 'answerImage7',
           topicId: 2
         },
         {
-          question: 'question8',
-          answer: 'answer8',
+          question: '📞🧑‍⚖️',
+          answer: 'Лучше звоните Солу',
           img: 'answerImage8',
           topicId: 2
         },
-        {
-          question: 'question9',
-          answer: 'answer9',
-          img: 'answerImage9',
-          topicId: 2
-        },
-        {
-          question: 'question10',
-          answer: 'answer10',
-          img: 'answerImage10',
-          topicId: 2
-        },
+       
       ],
       {}
     );
