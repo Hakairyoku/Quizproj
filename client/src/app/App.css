@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+body {
+  background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+  background-image: url('https://img.lovepik.com/bg/20240505/3d-render-illustration-of-theater-curtains-on-stage-or-floor_8836113_wh860.jpg!/fw/860');
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
