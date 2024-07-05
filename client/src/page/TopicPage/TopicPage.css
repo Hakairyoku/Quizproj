@@ -1,0 +1,54 @@
+.topicpage-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  .topicpage-container h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .topics-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .topic-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .topic-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .topic-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .topic-button:hover {
+    background-color: #45a049;
+  }
+  
+  .topic-link {
+    text-decoration: none;
+    color: white;
+  }
+  
