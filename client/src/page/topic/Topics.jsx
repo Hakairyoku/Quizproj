@@ -1,6 +1,4 @@
 import React from'react';
-
-
 function Topics({ topics,setTopics }) {
 
 
@@ -9,7 +7,7 @@ function Topics({ topics,setTopics }) {
         <h1>Категории</h1>
         <div>
             {topics&&topics.map((topic)=>(
-                < topic={topic} key={topic.id} setTopics={setTopics} />
+                <TopicItem topic={topic} key={topic.id} setTopics={setTopics} />
             ))}
         </div>
         </div>

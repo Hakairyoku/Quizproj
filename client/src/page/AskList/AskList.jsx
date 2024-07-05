@@ -50,16 +50,23 @@ export default function AskList() {
             onChange={(e) => SetAnswer(e.target.value)}
           />
           <button type='button' onClick={checkAnswer}>OK</button>
-          {id == 7 || id == 13 ? (
+
+
+         
+          {id == 8 || id == 16 ? (
             <button>
               {' '}
-              <Link to='/'>Главное меню</Link>
+              <Link to='/topics'>Категории</Link>
             </button>
           ) : (
             <button>
               <Link to={`/asks/${+id + 1}`}>Next</Link>
             </button>
           )}
+     
+           
+
+        
         </div>
         <div>{rightAnswer}</div>
       </div>
