@@ -18,7 +18,6 @@ export default function AskList() {
       }
     } catch (error) {
       console.error('Error fetching data:', error);
-      // Handle error (e.g., show error message to user)
     }
   };
 
@@ -28,10 +27,10 @@ export default function AskList() {
 
   function checkAnswer() {
     if ((answer.toLowerCase()).trim() === (question.answer || '').toLowerCase()) {
-      setRightAnswer('Success!');
+      setRightAnswer('Красава!!!');
       setTimeout(() => {
         setAnswer('');
-      }, 1000); // 1 second delay before clearing answer
+      }, 1000);
     } else {
       setRightAnswer(`No!! Правильный ответ: ${question.answer}`);
       setAnswer('');
@@ -59,13 +58,13 @@ export default function AskList() {
           ) : (
 
             <button className="navigation-button">
-              <Link to={`/asks/${+id + 1}`} className="link-button">Next</Link>
+              <Link to={`/asks/${+id + 1}`} className="link-button">Далее</Link>
             </button>
           )}
 
 
-          <button>
-          <Link to={`/`}>На Главную</Link>
+          <button className="navigation-button">
+          <Link to='/' className="link-button">На Главную</Link>
           </button>
      
            

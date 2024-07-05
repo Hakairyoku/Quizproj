@@ -9,14 +9,14 @@
   
   .question-image {
     max-width: 100%;
-    height: auto;
+    height: 100px;
     display: block;
     margin: 20px auto;
     border-radius: 8px;
   }
   
   .question-text {
-    font-size: 18px;
+    font-size: 100px;
     color: #333;
     text-align: center;
     margin: 20px 0;

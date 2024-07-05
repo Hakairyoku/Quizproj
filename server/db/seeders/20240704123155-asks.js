@@ -9,97 +9,97 @@ module.exports = {
         {
           question: '👳🛶🐯',
           answer: 'Жизнь Пи',
-          img: 'answerImage1',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '🌍🙉🙈🙊',
           answer: 'Планета обезьян',
-          img: 'answerImage4',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '👨👨‍🦰💖🗻',
           answer: 'Горбатая гора',
-          img: 'answerImage2',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '🍽️🙏❤️',
           answer: 'Ешь молись люби',
-          img: 'answerImage3',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '👨‍🦱🤲✂️',
           answer: 'Эдвард руки-ножницы',
-          img: 'answerImage5',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '🐼👊🏻',
           answer: 'Кунг-фу панда',
-          img: 'answerImage6',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '😎😎🚀🔫👽',
           answer: 'Люди в черном',
-          img: 'answerImage7',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '👩🍸🍹🥂🥃🕒',
           answer: 'Пила',
-          img: 'answerImage8',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 1
         },
         {
           question: '🗡️🪑🛡️',
           answer: 'Игра престолов',
-          img: 'answerImage1',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
         {
           question: '🏥👨‍⚕️🐺',
           answer: 'Доктор Хаус',
-          img: 'answerImage4',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
         {
           question: '👨‍🔬👨‍🎤🔫🧪⚗️💊💵',
           answer: 'Во все тяжкие',
-          img: 'answerImage2',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
         {
           question: '👣♛',
           answer: 'Ход королевы',
-          img: 'answerImage3',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
         {
           question: '🔪🧢',
           answer: 'Острые козырьки',
-          img: 'answerImage5',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
         {
           question: '🕵️‍♂️🎻📚',
           answer: 'Шерлок',
-          img: 'answerImage6',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
         {
           question: '👨👨👨🤝👩👩‍🦰👩',
           answer: 'Друзья',
-          img: 'answerImage7',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
         {
           question: '📞🧑‍⚖️',
           answer: 'Лучше звоните Солу',
-          img: 'answerImage8',
+          img: 'https://img.freepik.com/free-vector/question-mark-in-cartoon-style-circle_78370-1434.jpg',
           topicId: 2
         },
        
