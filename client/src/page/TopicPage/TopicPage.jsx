@@ -1,56 +1,49 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import request from '../services/axios';
 import { Link } from 'react-router-dom';
+import './TopicPage.css';
 
 function TopicPage({ title }) {
+  const [topics, setTopics] = useState([]);
+  const axiosTopics = async () => {
+    const { data } = await request.get('/topics');
+    console.log(data);
+    if (data.message === 'success') {
+      setTopics(data.topics);
+    }
+  };
 
-    
-const [topics, setTopics] = useState([])
-const axiosTopics = async () => {
-  const { data } = await request.get('/topics');
-  console.log(data);
-  if (data.message === 'success') {
-    setTopics(data.topics);
-  }
-};
   useEffect(() => {
     axiosTopics();
   }, []);
 
-
   return (
-      <div>
-        <h1>Topics</h1>
-        <div>
-      
-              { topics.length>1 &&  <>
-            <div>
-            <img src={topics[0].img}/>
-            <button>
-            <Link to={`/asks/1`}>
-                <h1 >{topics[0].title}</h1>
-            </Link>
-            </button>
-        </div>
-        <div>
-        <img src={topics[1].img}/>
-        
-        <button>
-        <Link to={`/asks/9`}>
-            <h1 >{topics[1].title}</h1>
-        </Link>
-        </button>
-    </div>
-    </>
-        
-              }
-      
+    <div className="topicpage-container">
+      <h1>Topics</h1>
+      <div className="topics-container">
+        {topics.length > 1 && (
+          <>
+            <div className="topic-item">
+              <img src={topics[0].img} alt={topics[0].title} className="topic-image" />
+              <button className="topic-button">
+                <Link to={`/asks/1`} className="topic-link">
+                  <h1>{topics[0].title}</h1>
+                </Link>
+              </button>
+            </div>
+            <div className="topic-item">
+              <img src={topics[1].img} alt={topics[1].title} className="topic-image" />
+              <button className="topic-button">
+                <Link to={`/asks/9`} className="topic-link">
+                  <h1>{topics[1].title}</h1>
+                </Link>
+              </button>
+            </div>
+          </>
+        )}
       </div>
-
-        </div>
+    </div>
   );
 }
 
 export default TopicPage;
-
-

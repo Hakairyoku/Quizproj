@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import request from '../services/axios';
+import './AskList.css';
 
 export default function AskList() {
   const { id } = useParams();
   const [question, setQuestion] = useState({});
-  const [answer, SetAnswer] = useState('');
+  const [answer, setAnswer] = useState('');
   const [rightAnswer, setRightAnswer] = useState('');
 
   const axiosQuestions = async () => {
@@ -29,40 +30,39 @@ export default function AskList() {
     if ((answer.toLowerCase()).trim() === (question.answer || '').toLowerCase()) {
       setRightAnswer('Success!');
       setTimeout(() => {
-        SetAnswer('');
+        setAnswer('');
       }, 1000); // 1 second delay before clearing answer
     } else {
       setRightAnswer(`No!! Правильный ответ: ${question.answer}`);
-      SetAnswer('');
+      setAnswer('');
     }
   }
 
   return (
-    <div>
+    <div className="asklist-container">
       <div>
-        {question.img && <img src={question.img} alt="Question" />}
-        <p>{question.question || 'Loading...'}</p>
+        {question.img && <img src={question.img} alt="Question" className="question-image" />}
+        <p className="question-text">{question.question || 'Loading...'}</p>
         <div>
           <input
             placeholder='Введите Ваш ответ'
             type='text'
             value={answer}
-            onChange={(e) => SetAnswer(e.target.value)}
+            onChange={(e) => setAnswer(e.target.value)}
+            className="answer-input"
           />
-          <button type='button' onClick={checkAnswer}>OK</button>
-
-
-         
+          <button type='button' onClick={checkAnswer} className="submit-button">OK</button>
           {id == 8 || id == 16 ? (
-            <button>
-              {' '}
-              <Link to='/topics'>Категории</Link>
+            <button className="navigation-button">
+              <Link to='/topics' className="link-button">Категории</Link>
             </button>
           ) : (
-            <button>
-              <Link to={`/asks/${+id + 1}`}>Далее</Link>
+
+            <button className="navigation-button">
+              <Link to={`/asks/${+id + 1}`} className="link-button">Next</Link>
             </button>
           )}
+
 
           <button>
           <Link to={`/`}>На Главную</Link>
@@ -71,8 +71,9 @@ export default function AskList() {
            
 
         
+
         </div>
-        <div>{rightAnswer}</div>
+        <div className="right-answer">{rightAnswer}</div>
       </div>
     </div>
   );
