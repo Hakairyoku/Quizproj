@@ -7,7 +7,7 @@ module.exports = {
       "Asks",
       [
         {
-          question: 'question1',
+          question: '🎩🔍🕰️👶🧔🕺',
           answer: 'answer1',
           img: 'answerImage1',
           topicId: 1

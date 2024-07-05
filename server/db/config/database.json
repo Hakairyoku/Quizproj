@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
 
-    "password": "postgres",
+    "password": "1",
 
 
     "database": "QuizJaysDb",
