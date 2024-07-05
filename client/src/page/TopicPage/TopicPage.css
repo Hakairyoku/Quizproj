@@ -1,54 +1,49 @@
-.topicpage-container {
-    padding: 20px;
-    background-color: #f4f4f9;
-    text-align: center;
-  }
-  
-  .topicpage-container h1 {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .topics-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .topic-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .topic-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .topic-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-  }
-  
-  .topic-button:hover {
-    background-color: #45a049;
-  }
-  
-  .topic-link {
-    text-decoration: none;
-    color: white;
-  }
-  
+import React, { useState, useEffect } from 'react';
+import request from '../services/axios';
+import { Link } from 'react-router-dom';
+import './TopicPage.css';
+
+function TopicPage({ title }) {
+  const [topics, setTopics] = useState([]);
+  const axiosTopics = async () => {
+    const { data } = await request.get('/topics');
+    console.log(data);
+    if (data.message === 'success') {
+      setTopics(data.topics);
+    }
+  };
+
+  useEffect(() => {
+    axiosTopics();
+  }, []);
+
+  return (
+    <div className="topicpage-container">
+      <h1>Topics</h1>
+      <div className="topics-container">
+        {topics.length > 1 && (
+          <>
+            <div className="topic-item">
+              <img src={topics[0].img} alt={topics[0].title} className="topic-image" />
+              <button className="topic-button">
+                <Link to={`/asks/1`} className="topic-link">
+                  <h1>{topics[0].title}</h1>
+                </Link>
+              </button>
+            </div>
+            <div className="topic-item">
+              <img src={topics[1].img} alt={topics[1].title} className="topic-image" />
+              <button className="topic-button">
+                <Link to={`/asks/9`} className="topic-link">
+                  <h1>{topics[1].title}</h1>
+                </Link>
+              </button>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default TopicPage;
